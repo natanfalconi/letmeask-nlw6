@@ -1,31 +1,41 @@
 import { useHistory } from 'react-router-dom'
 
+import { auth, firebase } from '../services/firebase'
+
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
 import googleIconImg from '../assets/images/google-icon.svg'
 
 import { Button } from '../components/Button'
 
+
 import '../styles/auth.scss'
 
 export function Home(){
     const history = useHistory()
 
-    function navigateToNewRoom (){
-        history.push('/room/new')
+
+    function handlerCreateRoom (){
+        const provider = new firebase.auth.GoogleAuthProvider();
+
+        auth.signInWithPopup(provider).then(result => {
+            console.log(result)
+ 
+            history.push('/rooms/new')
+        })
     }
 
     return(
         <div id="page-auth">
             <aside>
                 <img src={illustrationImg} alt="Ilustração" />
-                <strong>Crie salas de Q&amp;A ao-vivo</strong>
-                <p>Tires as duvidas da sua audiência em tempo real</p>
+                <strong>Toda pergunta tem <br /> uma resposta</strong>
+                <p>Aprenda e compartilhe conhecimentos <br /> com outras pessoas</p>
             </aside>
             <main>
                 <div className="main-content">
                     <img src={logoImg} alt="letmeask" />
-                    <button onClick={navigateToNewRoom} className="create-room">
+                    <button onClick={handlerCreateRoom} className="create-room">
                         <img src={googleIconImg} alt="logo do Google" />
                         Crie sua sala com o google
                     </button>
