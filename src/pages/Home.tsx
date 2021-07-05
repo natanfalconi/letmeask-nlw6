@@ -12,8 +12,8 @@ import { Button } from '../components/Button'
 import '../styles/auth.scss'
 
 export function Home(){
+    
     const history = useHistory()
-
 
     function handlerCreateRoom (){
         const provider = new firebase.auth.GoogleAuthProvider();
