@@ -15,6 +15,7 @@ import '../styles/auth.scss'
 export function Home() {
     const history = useHistory()
     const { user, signInWithGoogle } = useAuth()
+    
     const [roomCode, setRoomCode] = useState('')
 
     async function handlerCreateRoom() {
@@ -23,13 +24,13 @@ export function Home() {
         }
 
         history.push('/rooms/new')
-    }
+    } 
 
     async function handlerJoinRoom(event: FormEvent){
         event.preventDefault();
 
         if(roomCode.trim() === ''){
-            return alert('Preencha os campos')
+            return alert('Preencha o Nome da Sala')
         }
 
         const roomRef = await database.ref(`rooms/${roomCode}`).get()
