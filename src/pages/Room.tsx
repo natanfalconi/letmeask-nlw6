@@ -68,6 +68,7 @@ export function Room(){
 
             setTitle(databaseRoom.title)
             setQuestions(parsedQuestions)
+
         })
 
     }, [roomId])
