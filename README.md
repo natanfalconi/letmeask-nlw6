@@ -20,13 +20,13 @@ Para realizar o clone do repoótório é necessário fazer a instalação das de
 
 Devido as configurações do firebase, existe um arquivo .env.local no projeto, aonde para funcionar, deve ser adicionado diretamenta da sua conta>aplicação no firebase> Utilizando a seguinte sixtaxe 
 
-### REACT_APP_API_KEY=""
-### REACT_APP_AUTH_DOMAIN=""
-###  REACT_APP_DATABASE_URL=""
-###  REACT_APP_PROJECT_ID=""
-###  REACT_APP_STORAGE_BUCKET=""
-###  REACT_APP_MESSAGING_SENDER_ID=""
-###  REACT_APP_APP_ID=""
+REACT_APP_API_KEY=""
+REACT_APP_AUTH_DOMAIN=""
+REACT_APP_DATABASE_URL=""
+REACT_APP_PROJECT_ID=""
+REACT_APP_STORAGE_BUCKET=""
+REACT_APP_MESSAGING_SENDER_ID=""
+REACT_APP_APP_ID=""
 
 
 ![enter image description here](https://github.com/FalconiN/letmeask-nlw6/blob/master/src/assets/images/letmeask.png?raw=true)
