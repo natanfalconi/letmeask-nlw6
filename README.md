@@ -1,3 +1,6 @@
+
+![enter image description here](https://github.com/FalconiN/letmeask-nlw6/blob/master/src/assets/images/letmeask.png?raw=true)
+
 # LetmeAsk
 
 Let Me Ask se trata de uma plataforma aonde é possível criar salas para interação por parte do usuário com perguntas, com a possibilidade de votar(like) nas questões mais relevantes, e sendo possível apenas por parte do Administrador respondê-las.
@@ -22,6 +25,3 @@ Devido as configurações do firebase, existe um arquivo .env.local no projeto, 
 
 ![enter image description here](https://github.com/FalconiN/letmeask-nlw6/blob/master/src/assets/images/code.png)
 
-## Abaixo é a Tela inicial do projeto 
-
-![enter image description here](https://github.com/FalconiN/letmeask-nlw6/blob/master/src/assets/images/letmeask.png?raw=true)
