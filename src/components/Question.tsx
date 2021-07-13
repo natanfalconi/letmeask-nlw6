@@ -22,7 +22,7 @@ export function Question({
     children
 }: QuestionProps) {
     return(
-        <div className={`question ${isAnswered ? 'answered' : ''} ${isHighlighted ? 'highlighted' : ''}`}>
+        <div className={`question ${isAnswered ? 'answered' : ''} ${isHighlighted && !isAnswered ? 'highlighted' : ''}`}>
             <p>{content}</p>
 
             <footer>
